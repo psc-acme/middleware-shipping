@@ -1,0 +1,41 @@
+{
+    "name": "psc-acme/middleware-shipping",
+    "description": "Package middleware-shipping for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\MiddlewareShipping\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "symfony/dotenv": "^7.0",
+        "firebase/php-jwt": "^6.0",
+        "brick/math": "^0.12",
+        "league/commonmark": "^2.0",
+        "symfony/event-dispatcher": "^7.0"
+    },
+    "require-dev": {
+        "webforge/object-asserter": "^2.0.0",
+        "vimeo/psalm": "^5.0",
+        "mockery/mockery": "^1.6"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
